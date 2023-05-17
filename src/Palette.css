@@ -1,0 +1,46 @@
+/* Palette.css */
+
+.palette__grid {
+  display: grid;
+  width: 50vw;
+  height: 25vw;
+  gap: 10px;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  border-radius: 4px;
+  outline: none;
+  overflow-y:scroll;
+  max-height: 75vh;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.palette__tile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #000;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.palette__tile--selected {
+  border: 2px solid #ff0000;
+}
